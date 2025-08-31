@@ -23,7 +23,7 @@ export default function ItemsPage() {
     fetchItems();
   }, [fetchItems]);
 
-  // 件数表示などは useMemo で軽くキャッシュ
+  // 件数表示
   const count = useMemo(() => items.length, [items]);
 
   // 削除 → 再取得
